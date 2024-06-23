@@ -55,7 +55,7 @@ export default function Navbar() {
         className={`${
           !menuOpen && "hidden"
         } absolute w-full h-full bg-veryDarkBlue left-0 top-0 pt-28 opacity-90 sm:block sm:relative sm:bg-transparent sm:w-fit sm:h-fit sm:pt-0`}>
-        <ul className="flex flex-col items-center text-white w-full px-6 text-2xl font-light sm:text-veryDarkBlue sm:flex-row sm:text-base sm:font-normal sm:gap-6 md:gap-10">
+        <ul className="flex flex-col items-center text-white w-full px-6 text-2xl font-light sm:text-veryDarkBlue sm:flex-row sm:text-[14px] sm:font-normal sm:gap-6 md:gap-10 sm:px-0">
           <li className="border-t-[1px] border-grayishBlue w-full text-center py-4 sm:border-none sm:py-0">
             <a href="#">FEATURES</a>
           </li>
@@ -66,7 +66,7 @@ export default function Navbar() {
             <a href="#">CONTACT</a>
           </li>
           <li className="w-full text-center py-4 mt-2 sm:mt-0 sm:py-0">
-            <button className="border-2 rounded-md w-full py-2 font-normal sm:bg-red-500 sm:text-white sm:border-none sm:shadow-sm sm:px-8">
+            <button className="border-2 rounded-md w-full py-2 font-normal sm:bg-softRed sm:text-white sm:border-none sm:shadow-sm sm:px-6 sm:py-1">
               LOGIN
             </button>
           </li>
