@@ -1,12 +1,14 @@
 import { useState } from "react";
 import menuIcon from "../assets/images/icon-hamburger.svg";
 import closeIcon from "../assets/images/icon-close.svg";
+import facebookIcon from "../assets/images/icon-facebook.svg";
+import twitterIcon from "../assets/images/icon-twitter.svg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between py-10 px-6">
+    <header className="flex justify-between py-10 px-6 sm:items-center">
       <a href="#" className="z-10">
         <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
@@ -30,7 +32,7 @@ export default function Navbar() {
           </g>
         </svg>
       </a>
-      <button className="z-10">
+      <button className="z-10 sm:hidden">
         {menuOpen ? (
           <img
             src={closeIcon}
@@ -52,20 +54,30 @@ export default function Navbar() {
       <nav
         className={`${
           !menuOpen && "hidden"
-        } absolute w-full h-full bg-veryDarkBlue left-0 top-0 pt-28 opacity-90`}>
-        <ul className="flex flex-col items-center text-white w-full px-6">
-          <li className="border-t-2 w-full text-center py-4">
+        } absolute w-full h-full bg-veryDarkBlue left-0 top-0 pt-28 opacity-90 sm:block sm:relative sm:bg-transparent sm:w-fit sm:h-fit sm:pt-0`}>
+        <ul className="flex flex-col items-center text-white w-full px-6 text-2xl font-light sm:text-veryDarkBlue sm:flex-row sm:text-base sm:font-normal sm:gap-6 md:gap-10">
+          <li className="border-t-[1px] border-grayishBlue w-full text-center py-4 sm:border-none sm:py-0">
             <a href="#">FEATURES</a>
           </li>
-          <li className="border-t-2 w-full text-center py-4">
+          <li className="border-t-[1px] border-grayishBlue w-full text-center py-4 sm:border-none sm:py-0">
             <a href="#">PRICING</a>
           </li>
-          <li className="border-t-2 w-full text-center py-4">
+          <li className="border-y-[1px] border-grayishBlue w-full text-center py-4 sm:border-none sm:py-0">
             <a href="#">CONTACT</a>
           </li>
-          <li className="border-t-2 border-b-2 w-full text-center py-4">
-            <a href="#">LOGIN</a>
+          <li className="w-full text-center py-4 mt-2 sm:mt-0 sm:py-0">
+            <button className="border-2 rounded-md w-full py-2 font-normal sm:bg-red-500 sm:text-white sm:border-none sm:shadow-sm sm:px-8">
+              LOGIN
+            </button>
           </li>
+          <div className="absolute bottom-14 mx-auto sm:hidden">
+            <button className="mr-14">
+              <img src={facebookIcon} alt="facebook icon" />
+            </button>
+            <button>
+              <img src={twitterIcon} alt="twitter icon" />
+            </button>
+          </div>
         </ul>
       </nav>
     </header>
