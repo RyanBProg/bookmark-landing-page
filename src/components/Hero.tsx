@@ -2,7 +2,7 @@ import heroImage from "../assets/images/illustration-hero.svg";
 
 export default function Hero() {
   return (
-    <section className="mx-auto flex flex-col-reverse justify-between py-6 mt-6 mb-6 gap-6 sm:flex-row sm:gap-0 md:gap-6 sm:items-center max-w-[1000px]">
+    <section className="mx-auto flex flex-col-reverse justify-between py-6 mt-6 mb-40 gap-6 sm:flex-row sm:gap-0 md:gap-6 sm:items-center max-w-[1000px]">
       <div className="flex flex-col items-center gap-6 px-4 sm:items-start">
         <h1 className="font-medium text-4xl text-center sm:text-start sm:text-3xl md:text-5xl">
           Simple Bookmark Manager
