@@ -13,10 +13,10 @@ export default function Hero() {
           free.
         </p>
         <div className="flex gap-2">
-          <button className="btn bg-softBlue text-white hover:brightness-150">
+          <button className="btn bg-softBlue text-white hover:brightness-150 shadow-lg">
             Get it on Chrome
           </button>
-          <button className="btn bg-slate-200 text-slate-600 hover:brightness-90">
+          <button className="btn bg-slate-200 text-slate-600 hover:brightness-90 shadow-lg">
             Get it on Firefox
           </button>
         </div>
