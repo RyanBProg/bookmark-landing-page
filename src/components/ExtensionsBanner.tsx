@@ -5,7 +5,7 @@ import dotImage from "../assets/images/bg-dots.svg";
 
 export default function ExtensionsBanner() {
   return (
-    <div>
+    <div className="mb-60 px-6">
       <h2 className="font-medium text-2xl text-center mb-4">
         Download the extension
       </h2>
@@ -13,7 +13,7 @@ export default function ExtensionsBanner() {
         We've got more browsers in the pipeline. Please do let us know if you've
         got a favourite you'd like us to prioritize.
       </p>
-      <div className="mt-14 mb-40 flex flex-col items-center justify-center gap-10 md:flex-row md:gap-4 lg:gap-10">
+      <div className="mt-14 flex flex-col items-center justify-center gap-10 md:flex-row md:gap-4 lg:gap-10">
         <div className="flex flex-col items-center rounded-lg shadow-lg max-w-[250px]">
           <img src={chromeLogo} alt="google chrome logo" className="mt-6" />
           <h3 className="mt-6 mb-2 text-xl font-medium">Add to Chrome</h3>
