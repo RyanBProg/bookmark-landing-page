@@ -68,7 +68,13 @@ export default function FAQ() {
       </p>
       <div className="my-10 divide-y-2 last:border-b-[2px]">
         {questions.map((question) => {
-          return <Question title={question.title} answer={question.answer} />;
+          return (
+            <Question
+              key={question.title}
+              title={question.title}
+              answer={question.answer}
+            />
+          );
         })}
       </div>
       <button className="btn bg-softBlue text-white hover:brightness-150 w-fit shadow-lg mx-auto block">
