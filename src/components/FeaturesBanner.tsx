@@ -16,12 +16,12 @@ function BookmakingTab({ className }: TabProps) {
         <h3 className="text-center font-medium text-2xl sm:text-left">
           Bookmark in one click
         </h3>
-        <p className="text-center max-w-[600px] sm:text-left sm:max-w-[400px]">
+        <p className="text-center max-w-[600px] text-grayishBlue sm:text-left sm:max-w-[400px]">
           Organise your bookmarks however you like. Our simple drag-and-drop
           interface gives you complete control over how you manage your
           favourite sites.
         </p>
-        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit">
+        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit shadow-lg">
           More Info
         </button>
       </div>
@@ -38,11 +38,11 @@ function SearchingTab({ className }: TabProps) {
         <h3 className="text-center font-medium text-2xl sm:text-left">
           Intelligent Search
         </h3>
-        <p className="text-center max-w-[600px] sm:text-left sm:max-w-[400px]">
+        <p className="text-center max-w-[600px] text-grayishBlue sm:text-left sm:max-w-[400px]">
           Our powerful search feature will help you find saved sites in no time
           at all. No need to trawl through all of your bookmarks.
         </p>
-        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit">
+        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit shadow-lg">
           More Info
         </button>
       </div>
@@ -59,11 +59,11 @@ function SharingTab({ className }: TabProps) {
         <h3 className="text-center font-medium text-2xl sm:text-left">
           Share Your Bookmarks
         </h3>
-        <p className="text-center max-w-[600px] sm:text-left sm:max-w-[400px]">
+        <p className="text-center max-w-[600px] text-grayishBlue sm:text-left sm:max-w-[400px]">
           Easily share your bookmarks and collections with others. Create a
           shareable link that you can sent at the click of a button.
         </p>
-        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit">
+        <button className="btn bg-softBlue text-white hover:brightness-150 w-fit shadow-lg">
           More Info
         </button>
       </div>
@@ -75,7 +75,7 @@ export default function FeaturesBanner() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <section className="flex flex-col items-center mb-10">
+    <section className="flex flex-col items-center mb-40">
       <h2 className="font-medium text-2xl text-center mb-4">Features</h2>
       <p className="text-grayishBlue text-center max-w-[600px] px-4">
         Our aim is to make it quick and easy to access your favourite websites.

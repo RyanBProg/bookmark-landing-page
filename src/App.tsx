@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeaturesBanner from "./components/FeaturesBanner";
+import ExtensionsBanner from "./components/ExtensionsBanner";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <main>
         <Hero />
         <FeaturesBanner />
+        <ExtensionsBanner />
       </main>
     </div>
   );
